@@ -4,7 +4,7 @@ class Var(object):
     APP_ID = int(os.environ.get("APP_ID", 11935084))
     # 6 is a placeholder
     API_HASH = os.environ.get("API_HASH", "644b5ad6ad0e5d394cfe6b780f47680c")
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOMcBuz2i3ZTejAqDP8rU01axEPpZ0eS-4Ctxtnk2bCV59vznt_CYviSk9dsQgHHEEFCaPMx3oWkMkSz0J-XB-XY3MmxSA6tnEecx8wSVEbd7owUR8D1RahFGLZ6Jbh2IFXuVxojKNdKeAVE41FoKmUL85L5aTZpsIxz2G5Fv3dtUH6nt1Kj91HQiEYaRUasxEs93UsEltLQVAyYCDNKltBJPdUCGqZ36cs6gS3MyQkTy1DzmrgA2iQcQVLJ0zDLGZSadphK5eCPq3tp2CWO7hp9hASo9cmP3BJR9Bn4l0pdyHlPeOWPbyujGkaX_9Eu1FrTj3xZyTTx_4vTuOx9r_hl90Xc=")
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     LOGGER = True
