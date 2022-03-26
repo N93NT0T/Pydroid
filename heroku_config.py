@@ -1,9 +1,9 @@
 import os
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("APP_ID", 11935084))
     # 6 is a placeholder
-    API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+    API_HASH = os.environ.get("API_HASH", "644b5ad6ad0e5d394cfe6b780f47680c")
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
@@ -14,8 +14,8 @@ class Var(object):
     SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1097131648").split())
     WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "832241419").split())
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
-    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "719195224").split())
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "813878981").split())
+    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1393311560").split())
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1393311560").split())
     SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
@@ -33,7 +33,7 @@ class Var(object):
         t_file = open(TEMP_DOWNLOAD_DIRECTORY+"auth_token.txt","w")
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
-    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", "-1001567372048") 
     if PRIVATE_GROUP_ID != None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
